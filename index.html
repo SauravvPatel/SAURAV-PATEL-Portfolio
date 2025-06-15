@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurav Patel - Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="logo">Saurav Patel</div>
+        <div class="hamburger" onclick="toggleNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content animate-on-scroll">
+        <h1>Hi, I'm <span>Saurav Patel</span></h1>
+        <h2>UI/UX Designer | Frontend Developer | Tech Explorer </h2>
+        <p>
+          “Creative UI/UX Designer and Frontend Developer with experience turning modern designs into functional websites using React and Tailwind CSS. Passionate about building visually appealing and user-friendly digital products.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1cMlf7OeYXvlyGjoh1tV1_0hW7QSWcSyy/view?usp=drive_link" class="btn btn-alt" target="_blank">
+            <span>Download Resume</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-container animate-on-scroll">
+        <div class="about-image animate-on-scroll">
+          <img src="img/my_img.jpg" alt="Saurav Patel" />
+        </div>
+        <div class="about-content animate-on-scroll">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate <strong>Frontend Developer</strong> and
+            <strong>UI/UX Designer</strong> with expertise in HTML, CSS,
+            JavaScript, and Figma. I specialize in creating interactive and
+            user-friendly websites that deliver exceptional user experiences.
+          </p>
+          <p>
+            With <strong>2 years of experience</strong> in cinematography,
+            photography, and graphic design, I blend creativity with technology
+            to craft unique digital experiences that stand out in the digital landscape.
+          </p>
+          
+          <div class="skills-list">
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>Frontend Development</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-paint-brush"></i>
+              <span>UI/UX Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-camera"></i>
+              <span>Photography</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-video"></i>
+              <span>Cinematography</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-palette"></i>
+              <span>Graphic Design</span>
+            </div>
+          </div>
+
+          <div class="about-buttons">
+            <a href="#contact" class="btn">
+              <span>Hire Me</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+            <a href="#projects" class="btn btn-alt">
+              <span>View Projects</span>
+              <i class="fas fa-folder-open"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container animate-on-scroll">
+        <!-- Web Development -->
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Web Development</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="skill-category">
+          <h3><i class="fas fa-paint-brush"></i> UI/UX Design</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-pencil-ruler"></i>
+              <span>Wireframing</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Prototyping</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-users"></i>
+              <span>User Research</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Skills -->
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Additional Skills</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>Creative Thinking</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-users-cog"></i>
+              <span>Team Collaboration</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-clock"></i>
+              <span>Time Management</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-video"></i>
+              <span>Video Editing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Branding & Social Media -->
+        <div class="skill-category">
+          <h3><i class="fas fa-bullhorn"></i> Branding & Social Media</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fas fa-palette"></i>
+              <span>Logo Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-id-card"></i>
+              <span>Brand Identity</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Social Media Marketing</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Content Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        <button class="filter-btn" data-filter="app">Applications</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="video">Video Editing</button>
+      </div>
+
+      <div class="projects-grid animate-on-scroll">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="img/port2.jpg" alt="Portfolio Website" />
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A modern and fully responsive personal portfolio showcasing my skills and projects.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design">
+          <div class="project-image">
+            <img src="img/Shopping-Website.png" alt="E-Commerce UI" />
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce UI</h3>
+            <p>Designed a clean and intuitive UI for an online store with modern aesthetics.</p>
+            <div class="project-tags">
+              <span>Figma</span>
+              <span>UI Design</span>
+              <span>Prototype</span>
+              <span>Wireframe</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.figma.com/design/irmSFdAdxoqUUorsH1qbki/Shopping-Website--Community-?node-id=2-2&t=NqvSvpeXCfUyw8Fm-1" target="_blank" class="btn">
+                <span>View Design</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+          <div class="project-image">
+            <img src="img/cal.jpg" alt="Calculator Project" />
+          </div>
+          <div class="project-info">
+            <h3>Calculator Project</h3>
+            <p>A simple and functional calculator built with modern web technologies.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>DOM</span>
+            </div>
+            <div class="project-links">
+              <a href="Projects/CALCULATER/index.html" target="_blank" class="btn">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="img/hotel managment.png" alt="Restaurant Management" />
+          </div>
+          <div class="project-info">
+            <h3>Restaurant Management</h3>
+            <p>Comprehensive food service and restaurant management system.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="Projects/resturant/index.html" target="_blank" class="btn">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="graphic">
+          <div class="project-image">
+            <img src="img/GRAPHIC DESIGN.jpg" alt="Brand Identity Design" />
+          </div>
+          <div class="project-info">
+            <h3>Brand Identity Design</h3>
+            <p>Created a complete brand identity including logo, color palette, and brand guidelines for a local business.</p>
+            <div class="project-tags">
+              <span>Logo Design</span>
+              <span>Branding</span>
+              <span>Adobe Illustrator</span>
+              <span>Typography</span>
+            </div>
+            <div class="project-links">
+              <a href="https://drive.google.com/drive/folders/1yMa7Iw3cWhkBxIvDaSZqwdhySswF938l?usp=sharing" class="btn">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="video">
+          <div class="project-image">
+            <img src="img/VIDEO.jpg" alt="Corporate Video" />
+          </div>
+          <div class="project-info">
+            <h3>Corporate Video Production</h3>
+            <p>Produced and edited a promotional video for a tech startup, including motion graphics and sound design.</p>
+            <div class="project-tags">
+              <span>Video Editing</span>
+              <!-- <span>Motion Graphics</span> -->
+              <span>Adobe Premiere</span>
+              <span>After Effects</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.youtube.com/@Saurav_Patel" class="btn">
+                <span>View Project</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <!-- Modal content will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      
+      <div class="contact-container animate-on-scroll">
+        <div class="contact-info">
+          <div class="contact-item animate-on-scroll">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919106517007" class="contact-link">+91 91065 17007</a>
+          </div>
+          <div class="contact-item animate-on-scroll">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sauravpatel2442@gmail.com" class="contact-link">sauravpatel2442@gmail.com</a>
+          </div>
+          <div class="contact-item animate-on-scroll">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Gandhinagar, Gujarat, India</span>
+          </div>
+          <div class="contact-item animate-on-scroll">
+            <i class="fas fa-clock"></i>
+            <span>Available 24/7</span>
+          </div>
+          
+          <div class="connect-with-me">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/saurav-patel-788557270/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/SauravvPatel" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://x.com/sauravP27?t=eYFInEhJrbykls5fl6RrmA&s=09" target="_blank" class="social-icon">
+                <i class="fab fa-x-X"></i>
+                <span>X</span>
+              </a>
+              <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.facebook.com/sauravpatelll/ " target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.youtube.com/@Saurav_Patel" target="_blank" class="social-icon">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form animate-on-scroll" name="submit-to-google-sheet">
+          <div class="form-group">
+            <input type="text" name="name" id="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+            <span class="focus-border"></span>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder=" " required />
+            <label for="email">Your Email</label>
+            <span class="focus-border"></span>
+          </div>
+          
+          <div class="form-group">
+            <input type="text" name="subject" id="subject" placeholder=" " required />
+            <label for="subject">Subject</label>
+            <span class="focus-border"></span>
+          </div>
+          
+          <div class="form-group">
+            <textarea name="message" id="message" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+            <span class="focus-border"></span>
+          </div>
+          
+          <button type="submit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section animate-on-scroll">
+          <h3>Saurav Patel</h3>
+          <p>
+            A passionate Frontend Developer and UI/UX Designer creating
+            beautiful and functional digital experiences.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/sauravpatel2442/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/SauravvPatel" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section animate-on-scroll">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section animate-on-scroll">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 91065 17007</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>sauravpatel2442@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Gandhinagar, Gujarat, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Saurav Patel. All rights reserved. | 
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleNav() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://docs.google.com/spreadsheets/d/1WC_G2ehmqgtWJEYNVSfL5DOxfaAq_mfBP5xDZzSEEG8/edit?pli=1&gid=0#gid=0";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
